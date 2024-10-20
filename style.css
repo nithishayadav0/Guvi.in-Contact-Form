@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    font-weight:1px;
+  }
+  
+label{
+    display:block;
+    flex-direction: row;
+    margin: 10px 0 5px;
+    font-size:14px;
+}
+#myForm{
+    max-width:350px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding:15px 30px 30px 30px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width:320px;
+  }
+  button {
+    padding: 10px 15px;
+    background-color:#0dba4b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:100%;
+  }
+  textarea{
+    width:320px;
+    height:80px;
+    margin-bottom:10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.input-control textarea:focus{
+  outline:0;
+  border-color: #0dba4b;
+}
+.input-control input:focus{
+  outline:0;
+  border-color: #0dba4b;
+}
+.input-control.success textarea{
+    border-color: #0dba4b;
+}
+.input-control.success input{
+  border-color: #0dba4b;
+}
+.input-control.error input{
+  border-color: #ff3860;
+}
+.input-control.error textarea{
+  border-color: #ff3860;
+}
+.input-control.error textarea:focus{
+  border-color:#0dba4b;
+}
+.input-control.error input:focus{
+  border-color:#0dba4b;
+}

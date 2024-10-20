@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // or "ES2015", depending on your needs
+    "lib": [
+      "ES2015",      // Add this line
+      "DOM"          // This is needed for browser-related features
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}

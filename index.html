@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p style="display:block;text-align:center;" id="FormStatus"></p>
+    <form id="myForm">
+        <h1 style="font-size:26px;">Say <span style="color:#0dba4b">Hello!</span></h1>
+        <p style="font-size:14px; margin-bottom:18px;">Feel free to stop by and say hi!</p>
+
+        <div class="input-control">
+            <label for="name">Name<span style="color:red;font-size:500;margin-left:2px;">*</span></label>
+            <input type="text" id="name" name="name" >
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="email">E-mail id <span style="color:red;font-size:500;margin-left:2px;">*</span></label>
+            <input type="text" id="email" name="email" >
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="Contact">Contact Number <span style="color:red;font-size:500;margin-left:2px;">*</span></label>
+            <input type="text" id="Contact" name="Contact">
+            <div class="error"></div>
+        </div> 
+
+        <div class="input-control">
+            <label for="subject">Subject <span style="color:red;font-size:500;margin-left:2px;">*</span></label>
+            <input type="text" id="subject" name="subject" >
+            <div class="error"></div>
+        </div>   
+
+        <div class="input-control">
+            <label for="message">Message <span style="color:red;font-size:500;margin-left:2px;">*</span></label>
+            <textarea id="message" name="message" ></textarea>
+            <div class="error"></div>
+        </div>  
+
+        <button id="btn">Send</button>
+    </form>
+    
+    <script src="form.js" defer></script>
+</body>
+</html>
