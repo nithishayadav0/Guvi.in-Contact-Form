@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     formm.addEventListener('submit', async (event) => {
         event.preventDefault();  
-        console.log("Form submitted"); // Debugging
+        console.log("Form submitted"); 
 
         const nameInput = document.getElementById('name') as HTMLInputElement;
         const emailInput = document.getElementById('email') as HTMLInputElement;
@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let formIsValid = true; 
 
-        // Validation checks
+    
         if (nameInput.value.trim() === '') {
             setError(nameInput, "Name is required");
             formIsValid = false;
-            console.log("Name validation failed"); // Debugging
+            console.log("Name validation failed"); 
         } else {
             setSuccess(nameInput);
         }
@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (emailInput.value.trim() === '') {
             setError(emailInput, "Email is required");
             formIsValid = false;
-            console.log("Email validation failed"); // Debugging
+            console.log("Email validation failed"); 
         } else if (!isValidEmail(emailInput.value)) {
             setError(emailInput, "Provide a valid email address");
             formIsValid = false;
-            console.log("Invalid email format"); // Debugging
+            console.log("Invalid email format");
         } else {
             setSuccess(emailInput);
         }
@@ -63,15 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (contactInput.value.trim() === '') {
             setError(contactInput, "Contact is required");
             formIsValid = false;
-            console.log("Contact validation failed"); // Debugging
-        } else {
+            console.log("Contact validation failed"); 
             setSuccess(contactInput);
         }
 
         if (subjectInput.value.trim() === '') {
             setError(subjectInput, "Subject is required");
             formIsValid = false;
-            console.log("Subject validation failed"); // Debugging
+            console.log("Subject validation failed"); 
         } else {
             setSuccess(subjectInput);
         }
